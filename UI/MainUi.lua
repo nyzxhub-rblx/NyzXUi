@@ -1,17 +1,17 @@
 local HttpService = game:GetService("HttpService") -- V0.0.2
 
-if not isfolder("NyzXHub") then
-    makefolder("NyzXHub")
+if not isfolder("NateiraHub") then
+    makefolder("NateiraHub")
 end
-if not isfolder("NyzXHub/Config") then
-    makefolder("NyzXHub/Config")
+if not isfolder("NateiraHub/Config") then
+    makefolder("NateiraHub/Config")
 end
 
 local gameName   = tostring(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
 gameName         = gameName:gsub("[^%w_ ]", "")
 gameName         = gameName:gsub("%s+", "_")
 
-local ConfigFile = "LexsHub/Config/CHX_" .. gameName .. ".json"
+local ConfigFile = "NateiraHub/Config/CHX_" .. gameName .. ".json"
 
 ConfigData       = {}
 Elements         = {}
@@ -460,9 +460,9 @@ function Chloex:MakeNotify(NotifyConfig)
     return NotifyFunction
 end
 
-function Nyz(msg, delay, color, title, desc)
+function Nt(msg, delay, color, title, desc)
     return Chloex:MakeNotify({
-        Title = title or "NyzXHub",
+        Title = title or "NateiraHub",
         Description = desc or "Notification",
         Content = msg or "Content",
         Color = color or Color3.fromRGB(0, 208, 255),
@@ -806,7 +806,7 @@ function Chloex:Window(GuiConfig)
         Title.Position = UDim2.new(0, 0, 0, 4)
         Title.BackgroundTransparency = 1
         Title.Font = Enum.Font.GothamBold
-        Title.Text = "NyzXHub Window"
+        Title.Text = "NateiraHub Window"
         Title.TextSize = 22
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.ZIndex = 52
