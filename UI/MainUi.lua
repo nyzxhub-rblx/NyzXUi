@@ -53,6 +53,7 @@ function LoadConfigElements()
 end
 
 local Icons = {
+    Nt        = "rbxassetid://84946340265305", 
     lexshub   = "rbxassetid://71947103252559",
     player    = "rbxassetid://12120698352",
     web       = "rbxassetid://137601480983962",
